@@ -1,0 +1,28 @@
+.setting-contain {
+background: linear-gradient(rgb(21, 27, 27),rgba(66, 97, 79, 0.466));
+background-size: cover;
+height: 100vh;
+
+
+}
+
+.content-contain {
+    padding-left: 100px;
+}
+
+.setting-contain img {
+    width: 50px;
+    height: 30px;
+}
+
+
+.setting-contain input {
+    padding-left: 100px;
+    color: white;
+
+}
+
+
+/* .pic-hide {
+    display: none;
+} */

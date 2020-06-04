@@ -1,0 +1,107 @@
+.register-contain {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+input:focus {
+    outline: none;
+    
+}
+
+
+.register-contain h3 {
+    color: white;
+}
+
+.register-box {
+    height: 35%;
+    width: 50%;
+    border: solid 1px black;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    box-shadow: .3px .3px .3px .3px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.register-box h3 {
+    letter-spacing: 1.5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 300%;
+    padding-bottom: 10px;
+
+}
+
+.username input {
+    color: white;
+    font-size: 120%;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid white;
+    background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0));
+  }
+
+.username {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.password {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.password input {
+    color: white;
+    font-size: 120%;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid white;
+    background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0));
+  }
+
+  .register-box button {
+      width: 50%;
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: lightgray;
+    background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0));
+    opacity: 1; /* Firefox */
+  }
+
+
+
+  .register-box span {
+      color: white;
+  }
+
+p {
+    width: 200px;
+}
+
+.tag {
+    width: 100px;
+    background: white;
+    align-self: flex-end;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    
+}

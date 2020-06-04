@@ -1,0 +1,897 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.dash-contain {
+    max-height: 100%;
+    display: flex;
+    /* padding: 1rem; */
+    /* padding-right: .5rem;
+    padding-bottom: 1 rem; */
+    background: linear-gradient(rgb(21, 27, 27),rgba(66, 97, 79, 0.466));
+    
+
+    margin: 0;
+    
+    /* background-color: yellow; */
+
+
+    
+}
+
+.dash {
+    width: 100%;
+    margin-left: 100px;
+
+}
+
+
+
+
+
+.sidebar li {
+    width: 100%;
+    list-style: none;
+    color: whitesmoke;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: rgba(66, 97, 79, 0.466) solid .8px;
+    cursor: pointer;
+
+}
+
+
+.top-bar-container {
+    width: 100%
+}
+
+.top-bar {
+    width: 100%;
+    background-color: rgb(73, 95, 93);
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 100px;
+
+}
+
+
+
+
+.message-logo {
+    width: 5%;
+    border-right: 1px solid darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.message {
+    width: 70%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.landlord-user-only {
+    display: flex;
+}
+
+.landlord-info {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-left: 12px;
+    border-left: 1px solid darkgray;
+
+}
+
+.landlord-info p {
+    width: 100%;
+}
+
+
+.message input {
+    height: 10vh;
+    width: 100%;
+    padding: 0;
+    color: white;
+    font-size: 110%;
+    background-color: rgb(73, 95, 93);
+    border: 0;
+
+    
+}
+
+ input:focus {
+    outline: none;
+
+    
+    
+}
+
+.paperplane {
+    cursor: pointer;
+}
+
+
+.landlord-info img{
+    width: 75px;
+    height: 60px;
+    object-fit: contain;
+
+
+}
+
+.user-info-contain {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.user-info {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.user p {
+    color: white;
+    text-align: center;
+}
+
+.notifications {
+
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.notifications li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.user {
+    height: 300px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile-img {
+    width: 250px;
+    height: 290px;
+    position: absolute;
+    top: 150px;
+    z-index: 99;
+    border-radius: 100px;
+
+}
+
+.profile-box {
+    height: 250px;
+    width: 30.4%;
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    position: absolute;
+    top: 380px;
+    border-radius: 10px;
+}
+
+/* address {
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100px;
+    top: 150px;
+} */
+
+.address {
+    background-color: black;
+    width: 100%;
+}
+
+.profile-box p {
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    top: 100px;
+}
+
+.amneties {
+    width: 500px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 3;
+
+}
+
+.issues-list-contain {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    opacity: .8;
+    height: 100%;
+    max-height: 80vh;
+    overflow-y: scroll;
+    animation-name: opendown;
+    animation-duration: .8s;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+
+}
+
+@keyframes opendown {
+    from {
+        transform: translateX(-100%)
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+.issues-list-contain .issue-li{
+    opacity: 1;
+
+}
+
+.issues-list-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.85;
+    color: white;
+    height: 100%;
+
+}
+
+.issues-list-container h3 {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.85;
+    color: white;
+
+}
+
+
+
+
+
+.issue-li {
+    background-color: black;
+    height: 150%;
+    color: white;
+    height: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 125%;
+    line-height: 35px;
+    letter-spacing: 2px;
+    display: flex;
+
+
+
+
+}
+
+.issue-count {
+    width: 100%;
+    margin: 0;
+    
+}
+
+.issues-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(73, 95, 93);
+    
+
+}
+
+.issue-li button {
+    align-self: flex-end;
+    width: 100px;
+    height: 20px;
+    font-size: 70%;  
+    cursor: pointer;  
+
+}
+
+.issue-li button:hover {
+    color: yellow;
+    background-color: darkblue;
+
+}
+
+
+.issues {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+
+.issue-list {
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    
+}
+
+
+
+.issue-list p{
+    padding-top: 15px;
+    width: 450px;
+    height: 300px;
+    text-align: left;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+    word-wrap:break-word;
+    
+}
+
+.amneties li {
+    color: white;
+    width: 500px;
+    list-style: none;
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.card-container {
+    height: 100%;
+    width: 100%;
+    perspective: 1000px;
+
+}
+
+
+.iss {
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    align-self: center;
+
+}
+
+.card-container:hover .iss {
+    transform: rotateY(180deg);
+    
+}
+
+
+
+
+.plumbing, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    
+    
+    /* border-radius: 0.5rem; */
+  }
+
+
+.amneties-contain {
+    border-top: groove white 1px;
+
+}
+
+
+.situation {
+    display: flex;
+    width: 100%;
+}
+
+.hi {
+    opacity: 1;
+
+}
+
+/* .hide-map-contain {
+    height: 0px;
+
+} */
+
+
+.map-contain {
+    height: 100%;
+
+
+}
+
+.map-contain .body {
+    width:100%;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 1rem;
+    text-align: left;
+    
+}
+
+/* .issues-list-contain .amneties-contain .body{
+    opacity: .1;
+} */
+
+.issues-list-contain .amneties-contain .map-contain {
+    opacity: 1;
+}
+
+
+.issues-list-contain .bye {
+    opacity: .1;
+}
+
+.iss.first {
+    border-top: rgb(73, 95, 93) solid 1px;
+    
+
+}
+
+.iss.first p{
+    width: 400px;
+
+    
+}
+
+.iss.second {
+    border-top: rgb(73, 95, 93) solid 1px;
+    height: 100%;
+
+}
+
+.iss.second p{
+    width: 400px;
+
+}
+
+
+
+.plumbing {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+
+
+}
+
+.card-back {
+    background-color: rgb(73, 95, 93);
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    
+}
+
+.card-back form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-back form button {
+    height: 20px;
+    align-self: center;
+}
+
+.card-back p {
+    padding-top: 5px;
+}
+
+.card-back form textarea {
+    margin-top: 5px;
+    font-size: 120%;
+    height: 90px;
+    width: 450px;
+    align-self: center;
+}
+
+
+
+/* button {
+    font-size: 110%;
+    width: 120px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border: 0;
+    font-weight: bold;
+} */
+
+.issues-profile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+.landlord-notifications {
+    width: 500px;
+    height: 100%;
+    padding-top: 100px;
+    animation-name: grow;
+    animation-duration: 1s;
+    
+
+
+}
+
+
+
+.ten-issues {
+    color: white;
+
+}
+
+.ten-issues h3 {
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ten-issues p{
+    width: 100%;
+    font-size: 95%;
+}
+
+.ten-issues button {
+   margin-top: 30px;
+   color: white;
+
+}
+
+
+.show-hide-button {
+    width: 30%;
+    height: 20px;
+    border-radius: 5px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.tenant-issues {
+    color: white;
+
+}
+
+.shows {
+    height: 100%;
+    animation-name: grow;
+    animation-duration: 1s;
+    
+}
+
+@keyframes grow {
+    from {
+        transform: translateY(150%);
+    }
+    to {
+        translate: translateY(100%);
+    }
+}
+
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.hide {
+    display: none;
+
+
+}
+
+
+
+
+
+.iss-contain {
+    background-color: black;
+    opacity: .95;
+}
+
+.situation p {
+    border-bottom: 1px solid white;
+    opacity: 1;
+}
+
+
+.tenant-issues h3 {
+    margin-top: 10px;
+    letter-spacing: 2px;
+    
+}
+
+.tenant-issues-expand {
+    font-size: 120%;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    background: black;
+    width: 500px;
+    color: white;
+    border-radius: 15px;
+    animation-name: grow;
+    animation-duration: 1s;
+    overflow-y: scroll;
+    height: 400px;
+
+
+
+
+}
+
+.tenant-issues-expand h3 {
+    border-bottom: solid 1px black;
+}
+
+span {
+    color: red;
+    font-size: 90%;
+    padding-right: 5px;
+}
+
+.issue-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+    border-bottom: solid silver 1px;
+    align-self: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.issue-buttons button {
+    border-radius: 5px;
+    color: black;
+    font-size: 60%;
+    width: 80px;
+    height: 20px;
+    border: none;
+    /* border: white solid 3px; */
+}
+
+.landlord-user {
+    width: 240px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.dimYellow {
+    background-color: rgba(255,255,0, 0.1);
+}
+
+.button-box {
+    width: 500px;
+    display: flex;
+    text-align: left;
+}
+
+#dropdown-item-button{
+    background-color: rgb(130, 179, 181);
+    color: black;
+    border: 0;
+}
+
+.messaging {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.messaging:first-child {
+    padding-top: 10px;
+}
+
+.message-box {
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    
+
+}
+
+.message-box p {
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap:break-word;
+    animation-name: appear;
+    animation-duration: 1s;
+
+}
+
+@keyframes appear {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.tenant-message-box {
+    display: flex;
+    margin: 0 auto;
+    background-color: rgb(176, 191, 191);
+    margin-top: 10px;
+    height: 200px;
+    width: 100%;
+    overflow-y: scroll;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.tenant-messaging {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 100px;
+}
+
+.tenant-messaging p {
+    border-radius: 10px;
+    word-wrap:break-word;
+    animation-name: appear;
+    animation-duration: 1s;
+    width: 500px;
+    text-align: left;
+
+
+}
+
+.landlord-profile-box p {
+    width: 180px;
+}
+
+
+/* .messaging {
+    background-color: black;
+
+    background: none repeat scroll 0 0;
+    height: 880px;
+} */
+
+.paper li {
+    list-style: none;
+}
+
+.paper-click li {
+    list-style: none;
+}
+
+.paper-click li {
+    animation-name: pushIt;
+    animation-duration: 1s;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.paper-click li:hover {
+    /* width: 50px;
+    height: 50px; */
+    -ms-transform: rotate(50deg); /* IE 9 */
+    transform: rotate(50deg);
+    transition-duration: .5s;
+    list-style: none;
+}
+
+
+.paper li:hover {
+    /* width: 50px;
+    height: 50px; */
+    -ms-transform: rotate(50deg); /* IE 9 */
+    transform: rotate(50deg);
+    transition-duration: .5s;
+    list-style: none;
+}
+
+
+.paper {
+    color: white;
+    cursor: pointer;
+    animation-name: pushIt;
+    animation-duration: 1s;
+
+}
+
+@keyframes pushIt {
+    from {
+        transform: translateX(0);
+        -ms-transform: rotate(50deg); /* IE 9 */
+        transform: rotate(50deg);
+        transition-duration: .5s;
+    
+    }
+    to {
+        transform: translateX(500px);
+        
+    }
+}
+
